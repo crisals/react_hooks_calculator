@@ -18,7 +18,7 @@ The application is deployed on Google Cloud Platform.
 ----
 ## Calculator deployed on Google Cloud Platform
 
-* [Caclulator GCP] 
+* [Calculator GCP] 
 ----
 
 MIT
