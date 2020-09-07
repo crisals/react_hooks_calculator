@@ -6,7 +6,7 @@ function App() {
     <Fragment>
       <h1>CALCULATOR EXERCISE</h1>
       <h3>By Cristian Alarcón</h3>
-      <Calculator />
+      <Calculator input="1" />
     </Fragment>
   );
 }

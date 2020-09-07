@@ -44,20 +44,19 @@ button:hover {
 
 .calc,
 .subgrid {
-  display: grid;
+    display: grid;
 }
 
 .calc {
-  grid-template-areas:
+    grid-template-areas:
     "total total total total"
     "modif modif modif modif"
     "digit digit digit oper"
     "digit digit digit oper"
     "digit digit digit oper"
     "digit digit digit oper";
-  grid-auto-columns: 1fr;
+    grid-auto-columns: 1fr;
 }
-
 
 .clearButton{
     background-color: #f0595f;
@@ -81,17 +80,19 @@ button:hover {
 }
 
 .show-input {
-  grid-area: total;
-  grid-gap: 10px;
+    grid-area: total;
+    grid-gap: 10px;
 }
 
-.modifiers {
-  grid-area: modif;
-  grid-gap: 10px;
+.arithmetic{
+    grid-area: modif;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
 }
 
-.operations {
-  grid-area: oper;
+.equals {
+    grid-area: oper;
 }
 
 .digitsButton {
@@ -99,6 +100,10 @@ button:hover {
     grid-gap: 10px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.digitsButton button {
+    flex: 1 0 26%;
 }
 
 .show-result {
@@ -113,16 +118,4 @@ button:hover {
     padding-right: 20px;
     padding-left: 10px;
     grid-area: total;
-}
-
-.modifiers {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    grid-gap: 10px;
-}
-
-
-
-.digitsButton button {
-  flex: 1 0 26%;
 }
